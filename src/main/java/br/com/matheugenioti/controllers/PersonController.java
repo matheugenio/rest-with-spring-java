@@ -9,7 +9,7 @@ import br.com.matheugenioti.services.PersonServices;
 import br.com.matheugenioti.vo.v1.PersonVO;
 
 @RestController
-@RequestMapping("/person")
+@RequestMapping("/api/person/v1")
 public class PersonController {
 	
 	@Autowired
