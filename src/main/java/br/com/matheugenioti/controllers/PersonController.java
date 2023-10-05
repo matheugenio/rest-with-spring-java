@@ -33,7 +33,7 @@ public class PersonController {
             produces = { MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, MediaType.APPLICATION_YML},
             consumes = { MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, MediaType.APPLICATION_YML})
 			
-	public PersonVO create(@RequestBody PersonVO PersonVO)   {
+	public PersonVO create(@RequestBody PersonVO PersonVO) throws Exception   {
 		return service.create(PersonVO);
 		
 	}
@@ -42,7 +42,7 @@ public class PersonController {
             produces = { MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, MediaType.APPLICATION_YML},
             consumes = { MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, MediaType.APPLICATION_YML})
 			
-	public PersonVO update(@RequestBody PersonVO PersonVO)   {
+	public PersonVO update(@RequestBody PersonVO PersonVO) throws Exception   {
 		return service.update(PersonVO);
 		
 	}
