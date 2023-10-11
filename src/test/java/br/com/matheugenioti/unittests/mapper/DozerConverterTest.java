@@ -15,6 +15,7 @@ import br.com.matheugenioti.vo.v1.PersonVO;
 public class DozerConverterTest {
     
     MockPerson inputObject;
+    
 
     @BeforeEach
     public void setUp() {
