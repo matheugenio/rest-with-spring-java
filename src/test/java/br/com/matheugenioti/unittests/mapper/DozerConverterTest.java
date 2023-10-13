@@ -7,9 +7,9 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import br.com.erudio.unittests.mapper.mocks.MockPerson;
 import br.com.matheugenioti.mapper.DozerMapper;
 import br.com.matheugenioti.model.Person;
+import br.com.matheugenioti.unittests.mapper.mocks.MockPerson;
 import br.com.matheugenioti.vo.v1.PersonVO;
 
 public class DozerConverterTest {

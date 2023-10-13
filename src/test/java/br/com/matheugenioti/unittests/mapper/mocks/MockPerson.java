@@ -1,4 +1,4 @@
-package br.com.erudio.unittests.mapper.mocks;
+package br.com.matheugenioti.unittests.mapper.mocks;
 
 import java.util.ArrayList;
 import java.util.List;

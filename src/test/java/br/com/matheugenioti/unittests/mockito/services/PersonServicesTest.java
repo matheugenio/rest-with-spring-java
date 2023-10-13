@@ -16,11 +16,11 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import br.com.erudio.unittests.mapper.mocks.MockPerson;
 import br.com.matheugenioti.exceptions.RequiredObjectIsNullException;
 import br.com.matheugenioti.model.Person;
 import br.com.matheugenioti.repositories.PersonRepository;
 import br.com.matheugenioti.services.PersonServices;
+import br.com.matheugenioti.unittests.mapper.mocks.MockPerson;
 import br.com.matheugenioti.vo.v1.PersonVO;
 @TestInstance(Lifecycle.PER_CLASS)
 @ExtendWith(MockitoExtension.class)
