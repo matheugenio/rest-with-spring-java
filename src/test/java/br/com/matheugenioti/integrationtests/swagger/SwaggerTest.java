@@ -7,11 +7,11 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import br.com.matheugenioti.config.TestConfigs;
+import br.com.matheugenioti.configs.TestConfigs;
 import br.com.matheugenioti.integrationtests.testcontainers.AbstractIntegrationTest;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
-public class SwaggerIntegrationTest extends AbstractIntegrationTest{
+public class SwaggerTest extends AbstractIntegrationTest{
 
 	@Test
 	public void showDisplaySwaggerUIPage() {
