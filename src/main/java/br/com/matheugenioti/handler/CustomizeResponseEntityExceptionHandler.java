@@ -13,7 +13,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import br.com.matheugenioti.exceptions.ExceptionResponse;
 import br.com.matheugenioti.exceptions.RequiredObjectIsNullException;
 import br.com.matheugenioti.exceptions.ResourceNotFoundException;
-
+import br.com.matheugenioti.exceptions.InvalidJwtAuthenticationExceptions;
 @ControllerAdvice
 @RestController
 public class CustomizeResponseEntityExceptionHandler extends ResponseEntityExceptionHandler {
@@ -43,6 +43,15 @@ public class CustomizeResponseEntityExceptionHandler extends ResponseEntityExcep
 				request.getDescription(false));
 		
 		return new ResponseEntity<>(exceptionReponse, HttpStatus.BAD_REQUEST);
+		
+	}
+	@ExceptionHandler(InvalidJwtAuthenticationExceptions.class)
+	public final ResponseEntity<ExceptionResponse> InvalidJwtAuthenticationExceptions(Exception ex, WebRequest request) {
+		ExceptionResponse exceptionReponse = new ExceptionResponse(
+				new Date(), ex.getMessage(),
+				request.getDescription(false));
+		
+		return new ResponseEntity<>(exceptionReponse, HttpStatus.FORBIDDEN);
 		
 	}
 }
